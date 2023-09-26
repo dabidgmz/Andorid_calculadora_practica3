@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <!-- Botones numéricos -->
+
+    <TextView
+        android:id="@+id/text_view_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="289dp"
+        android:gravity="end"
+        android:padding="16dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <GridLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_input"
+        android:columnCount="4"
+        android:rowCount="4">
+
+        <!-- Botones numéricos (1-9) -->
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="1"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:onClick="onNumberClick" />
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/white"
+            android:onClick="onNumberClick"
+            android:text="2"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="3"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:onClick="onNumberClick" />
+
+        <Button
+            android:id="@+id/button_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="4"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:onClick="onNumberClick" />
+
+        <Button
+            android:id="@+id/button_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="5"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:onClick="onNumberClick" />
+
+        <Button
+            android:id="@+id/button_6"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/white"
+            android:onClick="onNumberClick"
+            android:text="6"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button_7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/white"
+            android:onClick="onNumberClick"
+            android:text="7"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="3"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:onClick="onNumberClick" />
+        <Button
+            android:id="@+id/button_8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="8"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:onClick="onNumberClick" />
+
+        <Button
+            android:id="@+id/button_9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="9"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:onClick="onNumberClick" />
+
+        <Button
+            android:id="@+id/button_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="0"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:onClick="onNumberClick" />
+        <!-- Otros botones numéricos aquí -->
+
+        <!-- Botones de operación (+, -, *, /) -->
+        <Button
+            android:id="@+id/button_mas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="+"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/gray"
+            android:onClick="onOperatorClick" />
+
+        <Button
+            android:id="@+id/button_menos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="-"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/gray"
+            android:onClick="onOperatorClick" />
+
+        <Button
+            android:id="@+id/button_div"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="/"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/gray"
+            android:onClick="onOperatorClick" />
+
+        <Button
+            android:id="@+id/button_por"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="*"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/gray"
+            android:onClick="onOperatorClick" />
+
+        <Button
+            android:id="@+id/button_potencia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="^"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/gray"
+            android:onClick="onOperatorClick" />
+
+
+        <!-- Otros botones de operación aquí -->
+
+        <!-- Botón igual -->
+        <Button
+            android:id="@+id/button_equal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="2"
+            android:text="="
+            android:textColor="@color/black"
+            android:backgroundTint="@color/yellow"
+            android:onClick="onEqualClick" />
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="2"
+            android:text="C"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/yellow"
+            android:onClick="onClearClick" />
+    </GridLayout>
+</RelativeLayout>
