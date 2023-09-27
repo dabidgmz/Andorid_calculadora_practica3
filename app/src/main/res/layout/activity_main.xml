@@ -50,16 +50,7 @@
             android:text="2"
             android:textColor="@color/black" />
 
-        <Button
-            android:id="@+id/button_3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:text="3"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:onClick="onNumberClick" />
+
 
         <Button
             android:id="@+id/button_4"
