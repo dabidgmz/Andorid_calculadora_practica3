@@ -27,6 +27,16 @@
         android:rowCount="4">
 
         <!-- Botones numéricos (1-9) -->
+        <Button
+            android:id="@+id/button_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="0"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:onClick="onNumberClick" />
 
         <Button
             android:id="@+id/button_1"
@@ -41,16 +51,25 @@
 
         <Button
             android:id="@+id/button_2"
-            android:layout_width="77dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:backgroundTint="@color/white"
-            android:onClick="onNumberClick"
+            android:layout_rowWeight="1"
             android:text="2"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:onClick="onNumberClick" />
 
-
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="3"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:onClick="onNumberClick" />
 
         <Button
             android:id="@+id/button_4"
@@ -76,37 +95,26 @@
 
         <Button
             android:id="@+id/button_6"
-            android:layout_width="59dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:backgroundTint="@color/white"
-            android:onClick="onNumberClick"
+            android:layout_rowWeight="1"
             android:text="6"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:onClick="onNumberClick" />
 
         <Button
             android:id="@+id/button_7"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_rowWeight="1"
-            android:layout_column="2"
             android:layout_columnWeight="1"
-            android:backgroundTint="@color/white"
-            android:onClick="onNumberClick"
+            android:layout_rowWeight="1"
             android:text="7"
-            android:textColor="@color/black" />
-        <Button
-            android:id="@+id/button_3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:text="3"
             android:textColor="@color/black"
             android:backgroundTint="@color/white"
             android:onClick="onNumberClick" />
+
         <Button
             android:id="@+id/button_8"
             android:layout_width="0dp"
@@ -129,16 +137,7 @@
             android:backgroundTint="@color/white"
             android:onClick="onNumberClick" />
 
-        <Button
-            android:id="@+id/button_0"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:text="0"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:onClick="onNumberClick" />
+
         <!-- Otros botones numéricos aquí -->
 
         <!-- Botones de operación (+, -, *, /) -->
